@@ -49,15 +49,15 @@ header('X-Frame-Options: SAMEORIGIN');
 <script type="text/javascript" src="/<?php echo $this->data['baseurlpath']; ?>resources/script.js"></script>
 <title>
   <?php
-  if (strpos($this->t('{themevanilla:default:browser_tab_title}'), 'not translated') === FALSE) {
-    echo $this->t('{themevanilla:default:browser_tab_title}');
+  if (strpos($this->t('{themeeosc:default:browser_tab_title}'), 'not translated') === FALSE) {
+    echo $this->t('{themeeosc:default:browser_tab_title}');
   }
   ?>
   <?php if(array_key_exists('header', $this->data)) { echo (' | ' . $this->data['header']); } ?>
 </title>
 
-<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/css/app.css')); ?>" />
-<link rel="shortcut icon" type="image/x-icon" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/images/favicon.ico')); ?>"  />
+<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/css/app.css')); ?>" />
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/images/favicon.ico')); ?>"  />
 
 <?php
 
@@ -127,21 +127,21 @@ if($onLoad !== '') {
 
 <div class="header">
 <?php
-  if (strpos($this->t('{themevanilla:default:ribbon_text}'), 'not translated') === FALSE || $this->t('{themevanilla:default:ribbon_text}')) {
+  if (strpos($this->t('{themeeosc:default:ribbon_text}'), 'not translated') === FALSE || $this->t('{themeeosc:default:ribbon_text}')) {
     echo '<div class="corner-ribbon red">';
-    echo $this->t('{themevanilla:default:ribbon_text}');
+    echo $this->t('{themeeosc:default:ribbon_text}');
     echo '</div>';
   }
   ?>
   <div class="text-center ssp-logo">
-    <a <?php echo (strpos($this->t('{themevanilla:default:logo_link_url}'), 'not translated') === FALSE ? 'href="' .  $this->t('{themevanilla:default:logo_link_url}') . '"' : '');
-             echo (strpos($this->t('{themevanilla:default:header_title}'), 'not translated') === FALSE ? 'title="' .  $this->t('{themevanilla:default:header_title}') . '"' : ''); ?> >
-      <img src="<?php echo SimpleSAML_Module::getModuleURL('themevanilla/resources/images/logo.jpg'); ?>" alt="simplesamlphp" />
+    <a <?php echo (strpos($this->t('{themeeosc:default:logo_link_url}'), 'not translated') === FALSE ? 'href="' .  $this->t('{themeeosc:default:logo_link_url}') . '"' : '');
+             echo (strpos($this->t('{themeeosc:default:header_title}'), 'not translated') === FALSE ? 'title="' .  $this->t('{themeeosc:default:header_title}') . '"' : ''); ?> >
+      <img src="<?php echo SimpleSAML_Module::getModuleURL('themeeosc/resources/images/logo.jpg'); ?>" alt="simplesamlphp" />
     </a>
   </div>
   <h1 class="text-center">
-    <?php echo (strpos($this->t('{themevanilla:default:header_title}'), 'not translated') === FALSE ? $this->t('{themevanilla:default:header_title}') : ''); ?>
-    <small><?php echo (strpos($this->t('{themevanilla:default:header_subtitle}'), 'not translated') === FALSE ? $this->t('{themevanilla:default:header_subtitle}') : ''); ?></small>
+    <?php echo (strpos($this->t('{themeeosc:default:header_title}'), 'not translated') === FALSE ? $this->t('{themeeosc:default:header_title}') : ''); ?>
+    <small><?php echo (strpos($this->t('{themeeosc:default:header_subtitle}'), 'not translated') === FALSE ? $this->t('{themeeosc:default:header_subtitle}') : ''); ?></small>
   </h1>
 </div> <!-- /header -->
 <div class="ssp-container" id="content">

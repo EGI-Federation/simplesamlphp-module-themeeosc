@@ -13,26 +13,26 @@ $retryUrl = $this->data['parameters']['%BASEDIR%'] . 'saml2/idp/initSLO.php?Rela
 <div class="row">
   <div class="col-sm-12">
   <?php
-    $friendly_title = '<h2>' . (strpos($this->t('{themevanilla:userid_error:friendly_title}'), 'not translated') === FALSE ? $this->t('{themevanilla:userid_error:friendly_title}') : '') . '</h2>';
+    $friendly_title = '<h2>' . (strpos($this->t('{themeeosc:userid_error:friendly_title}'), 'not translated') === FALSE ? $this->t('{themeeosc:userid_error:friendly_title}') : '') . '</h2>';
     echo $friendly_title;
   ?>
-    <p><?php echo $this->t('{themevanilla:userid_error:friendly_description}', $this->data['parameters']); ?></p>
-    <p><?php echo $this->t('{themevanilla:userid_error:resolution_description}', array('%RETRY_URL%' => $retryUrl)); ?></p>
+    <p><?php echo $this->t('{themeeosc:userid_error:friendly_description}', $this->data['parameters']); ?></p>
+    <p><?php echo $this->t('{themeeosc:userid_error:resolution_description}', array('%RETRY_URL%' => $retryUrl)); ?></p>
   </div>
 </div>
 <div class="row">
   <div class="col-sm-12">
     <div class="text-center">
     <a href="<?php echo $retryUrl; ?>" class="ssp-btn btn ssp-btn__action text-uppercase">
-        <?php echo (strpos($this->t('{themevanilla:userid_error:go2disco}'), 'not translated') === FALSE ? $this->t('{themevanilla:userid_error:go2disco}') : ''); ?>
+        <?php echo (strpos($this->t('{themeeosc:userid_error:go2disco}'), 'not translated') === FALSE ? $this->t('{themeeosc:userid_error:go2disco}') : ''); ?>
       </a>
     </div>
   </div>
 </div>
 <div class="row">
   <div class="col-sm-12">
-    <h2><?php echo (strpos($this->t('{themevanilla:userid_error:details_title}'), 'not translated') === FALSE ? $this->t('{themevanilla:userid_error:details_title}') : ''); ?></h2>
-    <p><?php echo (strpos($this->t('{themevanilla:userid_error:details_description}'), 'not translated') === FALSE ? $this->t('{themevanilla:userid_error:details_description}') : ''); ?></p>
+    <h2><?php echo (strpos($this->t('{themeeosc:userid_error:details_title}'), 'not translated') === FALSE ? $this->t('{themeeosc:userid_error:details_title}') : ''); ?></h2>
+    <p><?php echo (strpos($this->t('{themeeosc:userid_error:details_description}'), 'not translated') === FALSE ? $this->t('{themeeosc:userid_error:details_description}') : ''); ?></p>
     <pre class="ssp-error-code">
       <?php foreach ($this->data['parameters']['%ATTRIBUTES%'] as $attr) echo $attr . '<br>'; ?>
     </pre>

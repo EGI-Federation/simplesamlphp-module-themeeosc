@@ -15,7 +15,7 @@ You can install the theme using any of the methods below.
 If you want to use [composer](https://getcomposer.org/) to install this theme
 you need to edit `composer.json`. The file is located in your SimpleSAMLphp
 installation. Check the following example, that includes all the necessary
-additions for the installation of the **simplesamlphp-module-themevanilla
+additions for the installation of the **simplesamlphp-module-themeeosc
 v1.0.0**.
 
 ```
@@ -23,7 +23,7 @@ v1.0.0**.
 
   ...
 
-  "rciam/simplesamlphp-module-themevanilla": "1.0.0",
+  "rciam/simplesamlphp-module-themeeosc": "1.0.0",
   "rciam/css": "1.0.0",
   "rciam/js": "1.0.0"
 },
@@ -33,7 +33,7 @@ v1.0.0**.
 
   {
     "type": "vcs",
-    "url": "https://github.com/rciam/simplesamlphp-module-themevanilla"
+    "url": "https://github.com/rciam/simplesamlphp-module-themeeosc"
   },
   {
     "type": "package",
@@ -42,7 +42,7 @@ v1.0.0**.
       "version": "1.0.0",
       "dist": {
         "type": "zip",
-        "url": "https://github.com/rciam/simplesamlphp-module-themevanilla/releases/download/v1.0.0/css.zip"
+        "url": "https://github.com/rciam/simplesamlphp-module-themeeosc/releases/download/v1.0.0/css.zip"
       }
     }
   },
@@ -53,7 +53,7 @@ v1.0.0**.
       "version": "1.0.0",
       "dist": {
         "type": "zip",
-        "url": "https://github.com/rciam/simplesamlphp-module-themevanilla/releases/download/v1.0.0/js.zip"
+        "url": "https://github.com/rciam/simplesamlphp-module-themeeosc/releases/download/v1.0.0/js.zip"
       }
     }
   }
@@ -63,23 +63,23 @@ v1.0.0**.
   ...
 
   "post-update-cmd": [
-    "cp -r 'vendor/rciam/css' 'modules/themevanilla/www/resources'",
-    "cp -r 'vendor/rciam/js' 'modules/themevanilla/www/resources'"
+    "cp -r 'vendor/rciam/css' 'modules/themeeosc/www/resources'",
+    "cp -r 'vendor/rciam/js' 'modules/themeeosc/www/resources'"
   ]
 },
 ```
 
 With the above configuration composer will do several operations:
-* It will put the module `themevanilla` in the `modules` directory.
+* It will put the module `themeeosc` in the `modules` directory.
 * It will download and extract the compressed `css` and `js` directories that
   include the minified css and javascript files.
 * It will copy the `css` and `js` directories from the `vendor/rciam` directory
-  in the `themevanilla/www/resources` directory, where the static files of the
+  in the `themeeosc/www/resources` directory, where the static files of the
   theme should be placed.
 
 ### Direct download
 
-You can download `themevanilla.zip` from the [release page](https://github.com/rciam/simplesamlphp-module-themevanilla/releases).
+You can download `themeeosc.zip` from the [release page](https://github.com/rciam/simplesamlphp-module-themeeosc/releases).
 Download the zip file of the preferred release and extract its contents in the
 `modules` directory of your SimpleSAMLphp installation.
 
@@ -89,13 +89,13 @@ Clone this repository into the `modules` directory of your SimpleSAMLphp
 installation as follows:
 ```
 cd /path/to/simplesamlphp/modules
-git clone https://github.com/rciam/simplesamlphp-module-themevanilla.git themevanilla
+git clone https://github.com/rciam/simplesamlphp-module-themeeosc.git themeeosc
 ```
 Note that the cloned repository will not include the css files or minified
 javascript files.
 You'll need to download or produce them. You can download the compressed
-directories (`js.zip` and `css.zip`) from the [release page](https://github.com/rciam/simplesamlphp-module-themevanilla/releases) and
-extract them under `modules/themevanilla/www/resources`.  If you want to produce
+directories (`js.zip` and `css.zip`) from the [release page](https://github.com/rciam/simplesamlphp-module-themeeosc/releases) and
+extract them under `modules/themeeosc/www/resources`.  If you want to produce
 them, you may read the customisation instructions below.
 
 ### Cookie Policy
@@ -103,7 +103,7 @@ them, you may read the customisation instructions below.
 In order to use Cookie Policy page you must copy the configuration file
 from the `config-example` folder to core config directory.
 ```
-cp <path-to-module>/config-example/module_themevanilla.php <path-to-simplesamlphp>/config
+cp <path-to-module>/config-example/module_themeeosc.php <path-to-simplesamlphp>/config
 ```
 
 
@@ -112,7 +112,7 @@ cp <path-to-module>/config-example/module_themevanilla.php <path-to-simplesamlph
 ### Basic usage
 
 In order to use this module as theme you need to set in the
-`config/config.php`: `'theme.use' => 'themevanilla:ssp'`
+`config/config.php`: `'theme.use' => 'themeeosc:ssp'`
 
 ### Using IdP login buttons with icons
 
@@ -173,10 +173,10 @@ You can find definitions and dictionaries in the `dictionaries` directory.
 ### Images
 
 Place your logo and favicon in the directory:
-`themevanilla/www/resources/images` If you name them `logo.jpg` and
+`themeeosc/www/resources/images` If you name them `logo.jpg` and
 `favicon.ico` they will be loaded without any other modification.  If you name
 them differently you need to modify the template `header.php` that is placed in:
-`themevanilla/themes/ssp/default/includes/`.
+`themeeosc/themes/ssp/default/includes/`.
 
 By default, the logo has height 60px. See below how you can modify it.
 
@@ -187,7 +187,7 @@ the `logo_link_url` definition in `dictionaries/default.definition.json` file.
 
 ### Footer
 If you want to make any changes in the footer you need to modify the template
-`footer.php` that is placed in: `themevanilla/themes/ssp/default/includes/`.
+`footer.php` that is placed in: `themeeosc/themes/ssp/default/includes/`.
 
 ### Header ribbon
 
@@ -199,14 +199,14 @@ If you want to hide the ribbon, set `ribbon_text` to `""`.
 
 To produce the css files for this theme follow these steps:
 * Install sass ([installation guide](http://sass-lang.com/install))
-* Go to the directory `themevanilla/www/resources`
+* Go to the directory `themeeosc/www/resources`
 * Run the cli sass: `sass --update sass:css`
 
 After these steps the css files will be in the directory
-`themevanilla/www/resources/css`
+`themeeosc/www/resources/css`
 
 You can change the settings of this theme from the files:
-* `themevanilla/www/resources/sass/_settings.scss`: Here you will see the
+* `themeeosc/www/resources/sass/_settings.scss`: Here you will see the
   following variables:
   - $btn-action: background color of primary button
   - $btn-warning: background color of warning button
@@ -216,10 +216,10 @@ You can change the settings of this theme from the files:
   - $btn-footer-text: text color of button that is in the footer
   - $btn-footer-border: border color of button that is in the footer
 
-* `themevanilla/www/resources/sass/_colors.scss`: Here you can add or change
+* `themeeosc/www/resources/sass/_colors.scss`: Here you can add or change
   color settings.
 
-* `themevanilla/www/resources/sass/_idps_buttons.scss`: Here you can add or
+* `themeeosc/www/resources/sass/_idps_buttons.scss`: Here you can add or
   modify settings that are related with the buttons of the selected subset of
   IdPs.
 
@@ -235,7 +235,7 @@ compiling options.
 To modify the cookie banner and cookie policy page, you must edit the following files:
 `<path-to-module>/dictionaries/policy.definition.json`
 and to modify the table in cookie policy page:
-`<path-to-simplesamlphp>/config/module_themevanilla.php`
+`<path-to-simplesamlphp>/config/module_themeeosc.php`
 
 
 ## About SimpleSAMLphp themes

@@ -1,2 +1,2 @@
-simplesamlphp-module-themevanilla
+simplesamlphp-module-themeeosc
 version 2.1.0

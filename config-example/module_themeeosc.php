@@ -4,7 +4,7 @@
  * Copy this file to default config directory and edit the properties.
  *
  * copy command (from SimpleSAML base dir)
- * cp modules/themevanilla/module_themevanilla.php config/
+ * cp modules/themeeosc/module_themeeosc.php config/
  */
 $config = array(
     'cookiePolicy' => array(

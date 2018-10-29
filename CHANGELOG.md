@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [v2.1.0](https://github.com/rciam/simplesamlphp-module-themevanilla/compare/v2.0.0...v2.1.0) - 2018-10-18
+## [v2.1.0](https://github.com/rciam/simplesamlphp-module-themeeosc/compare/v2.0.0...v2.1.0) - 2018-10-18
 
 ### Added
 - Add banner and an extra view for cookies options
@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     definition file
   - Render header logo link url customisable
 
-## [v2.0.0](https://github.com/rciam/simplesamlphp-module-themevanilla/compare/v1.0.0...v2.0.0) - 2018-04-17
+## [v2.0.0](https://github.com/rciam/simplesamlphp-module-themeeosc/compare/v1.0.0...v2.0.0) - 2018-04-17
 
 ### Added
 - Module discopower:
@@ -42,7 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Use the translated name to display an IdP.
 
 
-## [v1.0.0](https://github.com/rciam/simplesamlphp-module-themevanilla/compare/v0.1.0...v1.0.0) - 2018-01-19
+## [v1.0.0](https://github.com/rciam/simplesamlphp-module-themeeosc/compare/v0.1.0...v1.0.0) - 2018-01-19
 
 ### Added
 - Use SASS for the added style rules.
@@ -71,7 +71,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-## [v0.1.0](https://github.com/rciam/simplesamlphp-module-themevanilla/commits/v0.1.0) - 2018-01-12
+## [v0.1.0](https://github.com/rciam/simplesamlphp-module-themeeosc/commits/v0.1.0) - 2018-01-12
 
 ### Added
 Create a new theme for SimpleSAMLphp. The goal is to improve the experience for

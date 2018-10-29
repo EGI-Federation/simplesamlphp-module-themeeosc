@@ -9,18 +9,18 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
   </div><!-- /container -->
   </div><!-- /ssp-container -->
 
-<?php if(strpos($this->t('{themevanilla:discopower:cookies_text}'), 'not translated') === FALSE || strpos($this->t('{themevanilla:discopower:cookies_accept_btn_text}'), 'not translated') === FALSE) { ?>
+<?php if(strpos($this->t('{themeeosc:discopower:cookies_text}'), 'not translated') === FALSE || strpos($this->t('{themeeosc:discopower:cookies_accept_btn_text}'), 'not translated') === FALSE) { ?>
   <!-- cookies popup -->
   <div id="cookies">
     <div id="cookies-wrapper">
       <p>
-        <?php echo $this->t('{themevanilla:discopower:cookies_text}'); ?>
-        <?php if(strpos($this->t('{themevanilla:discopower:cookies_link_text}'), 'not translated') === FALSE) { ?>
-        <a href="<?php echo $this->t('{themevanilla:discopower:cookies_link_url}'); ?>" target="_blank"><?php echo $this->t('{themevanilla:discopower:cookies_link_text}'); ?></a>
+        <?php echo $this->t('{themeeosc:discopower:cookies_text}'); ?>
+        <?php if(strpos($this->t('{themeeosc:discopower:cookies_link_text}'), 'not translated') === FALSE) { ?>
+        <a href="<?php echo $this->t('{themeeosc:discopower:cookies_link_url}'); ?>" target="_blank"><?php echo $this->t('{themeeosc:discopower:cookies_link_text}'); ?></a>
         <?php } ?>
       </p>
       <a id="js-accept-cookies" class="cookies-ok" href="#">
-        <?php echo $this->t('{themevanilla:discopower:cookies_accept_btn_text}'); ?>
+        <?php echo $this->t('{themeeosc:discopower:cookies_accept_btn_text}'); ?>
       </a>
     </div>
   </div>
@@ -110,10 +110,10 @@ if ($includeLanguageBar) {
 ?>
     <div class="copy col-sm-6 ssp-footer__item">
       <a href="https://grnet.gr/">
-        <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML_Module::getModuleURL('themevanilla/resources/images/grnet_logo_en.svg'); ?>" alt="GRNET" />
+        <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML_Module::getModuleURL('themeeosc/resources/images/grnet_logo_en.svg'); ?>" alt="GRNET" />
       </a>
       <div class="ssp-footer__item__copyright">
-        Copyright &copy;<?php echo (strpos($this->t('{themevanilla:discopower:copyright_year_start}'), 'not translated') === FALSE ? $this->t('{themevanilla:discopower:copyright_year_start}') . '-' : ''); echo date("Y"); ?>
+        Copyright &copy;<?php echo (strpos($this->t('{themeeosc:discopower:copyright_year_start}'), 'not translated') === FALSE ? $this->t('{themeeosc:discopower:copyright_year_start}') . '-' : ''); echo date("Y"); ?>
       </div>
     </div>
     <div class="col-sm-3 ssp-footer__item">
@@ -124,19 +124,19 @@ if ($includeLanguageBar) {
   </div> <!-- /container-fluid -->
 </footer>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/js/cookie.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/js/cookie.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/js/dropdown.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/js/dropdown.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/js/modal.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/js/modal.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/js/tooltip.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/js/tooltip.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/js/theme.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/js/theme.js')); ?>">
   </script>
 
 </body>
