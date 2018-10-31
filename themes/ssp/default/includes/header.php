@@ -136,7 +136,7 @@ if($onLoad !== '') {
   <div class="text-center ssp-logo">
     <a <?php echo (strpos($this->t('{themeeosc:default:logo_link_url}'), 'not translated') === FALSE ? 'href="' .  $this->t('{themeeosc:default:logo_link_url}') . '"' : '');
              echo (strpos($this->t('{themeeosc:default:header_title}'), 'not translated') === FALSE ? 'title="' .  $this->t('{themeeosc:default:header_title}') . '"' : ''); ?> >
-      <img src="<?php echo SimpleSAML_Module::getModuleURL('themeeosc/resources/images/logo.jpg'); ?>" alt="simplesamlphp" />
+      <img src="<?php echo SimpleSAML_Module::getModuleURL('themeeosc/resources/images/logo.png'); ?>" alt="simplesamlphp" />
     </a>
   </div>
   <h1 class="text-center">
