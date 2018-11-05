@@ -41,7 +41,7 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
                 Copyright 2018 - All rights reserved
             </div>
             <div class="col-sm-3 text-right">
-                <a href="https://aai.egi.eu/privacy.html">Privacy Policy</a>
+                <a href="https://aai.eosc-portal.eu/privacy/en/">Privacy Policy</a>
             </div>
 
 
