@@ -190,9 +190,18 @@ h4 {
     .ssp-content-group--footer {
         padding-bottom: 0;
         margin-bottom: 0;
+        text-align: center;
+        .col-sm-4 {
+            text-align: center;
+        }
+    }
+    #copyright {
+        margin-bottom: 6px;
+    }
+    #copyright, #privacy {
+        text-align: left!important;
     }
 }
-
 
 // Buttons
 
@@ -348,7 +357,7 @@ h4 {
 
 
 .ssp-dropdown__two_cols {
-    width: 400px;
+    // width: 400px;
     padding: 6px;
     @at-root &--item {
         width: 50%;

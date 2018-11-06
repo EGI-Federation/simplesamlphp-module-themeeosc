@@ -37,11 +37,13 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
             <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML_Module::getModuleURL('themeeosc/resources/images/logo_w.png'); ?>" alt="EOSC" />
         </div>
         <div class="col-sm-8 ssp-content-group--bottom">
-            <div class="col-sm-9 text-right">
-                Copyright 2018 - All rights reserved
-            </div>
-            <div class="col-sm-3 text-right">
-                <a href="https://aai.eosc-portal.eu/privacy/en/">Privacy Policy</a>
+            <div class="row">
+                <div class="col-sm-9 text-right" id="copyright">
+                    Copyright 2018 - All rights reserved
+                </div>
+                <div class="col-sm-3 text-right" id="privacy">
+                    <a href="https://aai.eosc-portal.eu/privacy/en/">Privacy Policy</a>
+                </div>
             </div>
 
 
