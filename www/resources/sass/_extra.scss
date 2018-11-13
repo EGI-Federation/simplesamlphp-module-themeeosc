@@ -183,6 +183,10 @@ h4 {
     }
 }
 
+#privacy {
+        white-space: nowrap;
+}
+
 @media screen and (max-width: 768px) {
     .ssp-footer__item:not(:last-child) {
         margin-bottom: 12px;
@@ -197,8 +201,9 @@ h4 {
     }
     #copyright {
         margin-bottom: 6px;
+        text-align: left!important;
     }
-    #copyright, #privacy {
+    #privacy {
         text-align: left!important;
     }
 }
@@ -373,7 +378,7 @@ h4 {
 .ssp-content-group {
     padding: 0px 42px;
     &--bottom {
-        padding-top: 40px;
+        padding-top: 25px;
     }
 
     &__provider-list {
