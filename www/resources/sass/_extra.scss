@@ -342,6 +342,45 @@ h4 {
     }
 }
 
+
+.eosc-btn {
+    background-size: 200% auto;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: unset;
+    line-height: 1.6;
+    margin: 5px;
+    padding: 7px 30px;
+    transition: 0.5s;
+    @at-root &__action {
+        background-image: linear-gradient(to right, $bright-turquoise 0%, $bright-blue 100%);
+        color: $white;
+        &:focus, &:active {
+            color: $white;
+            background-image: linear-gradient(to right, $bright-turquoise 0%, $bright-blue 100%);
+        }
+        &:hover {
+            color: $white;
+            background: $bright-blue;
+        }
+    }
+    @at-root &__secondary {
+        background-color: $white;
+        color: $bright-blue;
+        &:focus, &:active {
+            background-color: $white;
+            color: $bright-blue;
+        }
+        &:focus, &:active, &:hover {
+            background-color: $light-turquoise;
+            color: $bright-blue;
+        }
+    }
+}
+
 .ssp-btn__show-more {
     color: $text-color;
     &:hover {
@@ -352,6 +391,7 @@ h4 {
 .ssp-btns-container {
     text-align: center;
     padding-top: 32px;
+    margin-bottom: 20px;
     @at-root &--btn__right.ssp-btn {
         margin-left:  $btn-distance;
     }
