@@ -194,10 +194,6 @@ h4 {
     .ssp-content-group--footer {
         padding-bottom: 0;
         margin-bottom: 0;
-        text-align: center;
-        .col-sm-4 {
-            text-align: center;
-        }
     }
     #copyright {
         margin-bottom: 6px;
@@ -397,6 +393,12 @@ h4 {
     }
     @at-root &--btn__left.ssp-btn {
         margin-right: $btn-distance;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .ssp-btns-container--btn__left.ssp-btn {
+        margin-right: 5px;
     }
 }
 
