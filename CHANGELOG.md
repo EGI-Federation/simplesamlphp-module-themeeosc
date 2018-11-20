@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Enable/disable cookie banner functionality via setting in config file.
+
 ### Changed
 - Replace themevanilla -> themeeosc 
 - Use EOSC identity (logos, translations)

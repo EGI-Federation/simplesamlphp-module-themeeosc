@@ -1,5 +1,7 @@
-
 <?php
+$themeConfig = SimpleSAML_Configuration::getConfig('module_themeeosc.php');
+$enable_cookies_banner = $themeConfig->getValue('enable_cookies_banner');
+
 if(!empty($this->data['htmlinject']['htmlContentPost'])) {
   foreach($this->data['htmlinject']['htmlContentPost'] AS $c) {
     echo $c;
@@ -9,7 +11,7 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
   </div><!-- /container -->
   </div><!-- /ssp-container -->
 
-<?php if(strpos($this->t('{themeeosc:discopower:cookies_text}'), 'not translated') === FALSE || strpos($this->t('{themeeosc:discopower:cookies_accept_btn_text}'), 'not translated') === FALSE) { ?>
+<?php if ($enable_cookies_banner) { ?>
   <!-- cookies popup -->
   <div id="cookies">
     <div id="cookies-wrapper">
