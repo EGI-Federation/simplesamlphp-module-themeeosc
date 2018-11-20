@@ -22,3 +22,4 @@ $config = array(
     'enable_cookies_banner' => false
 );
 
+?>
