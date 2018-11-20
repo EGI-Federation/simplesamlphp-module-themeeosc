@@ -38,10 +38,12 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
         </div>
         <div class="col-sm-8 ssp-content-group--bottom">
                 <div class="col-sm-9 text-right" id="copyright">
-                    Copyright 2018 - All rights reserved
+                    <?php echo $this->t('{themeeosc:discopower:copyright_text}'); ?>
                 </div>
                 <div class="col-sm-3 text-right" id="privacy">
-                    <a href="https://aai.eosc-portal.eu/privacy/en/">Privacy Policy</a>
+                    <a href="<?php echo $this->t('{themeeosc:discopower:privacy_link_url}'); ?>" title="">
+                        <?php echo $this->t('{themeeosc:discopower:privacy_link_text}'); ?>
+                    </a>
                 </div>
 
 
