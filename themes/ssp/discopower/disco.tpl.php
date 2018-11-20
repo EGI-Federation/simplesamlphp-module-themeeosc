@@ -101,7 +101,7 @@ function showEntry($t, $metadata, $favourite = FALSE, $withIcon = FALSE) {
 
 ?>
 
-  <h2 class="text-center header-tako"><?php echo (strpos($this->t('{themeeosc:discopower:title}'), 'not translated') === FALSE ? $this->t('{themeeosc:discopower:title}') : ''); ?></h2>
+  <h2 class="text-center header-teko"><?php echo (strpos($this->t('{themeeosc:discopower:title}'), 'not translated') === FALSE ? $this->t('{themeeosc:discopower:title}') : ''); ?></h2>
 
 
 <?php
