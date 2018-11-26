@@ -54,6 +54,10 @@ form {
 // Headings
 // No use of bem, when we want to override every instance of them
 
+.ssp-header__lang {
+    top: 40px;
+}
+
 .ssp-logo {
     margin-top: $header-margin-top;
     a {
@@ -83,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $header-font-family;
     font-weight: $header-font-weight;
     font-size: 26px;
     text-transform: none!important;
@@ -103,7 +107,7 @@ h1 small {
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $header-font-family;
     font-weight: $header-font-weight;
     font-size: 20px;
     text-transform: none!important;
@@ -128,13 +132,23 @@ h4 {
     color: $footer-text;
     font-weight: $footer-font-weight;
     margin-top: 32px;
+    text-align: left;
     &--container {
         padding: 12px 18px 18px;
+    }
+    &--disclaimer {
+        background: $body-bg;
+        color: $almost-black-75;
+        padding: 20px 0;
+        p {
+            padding: 0;
+        }
     }
     a {
         color: $footer-link;
         &:hover {
-            color: darken($footer-link, 10%);
+            color: $footer-link-hover;
+            text-decoration: none;
         }
     }
     &__item {
@@ -169,6 +183,10 @@ h4 {
     }
 }
 
+#privacy {
+        white-space: nowrap;
+}
+
 @media screen and (max-width: 768px) {
     .ssp-footer__item:not(:last-child) {
         margin-bottom: 12px;
@@ -177,8 +195,14 @@ h4 {
         padding-bottom: 0;
         margin-bottom: 0;
     }
+    #copyright {
+        margin-bottom: 6px;
+        text-align: left!important;
+    }
+    #privacy {
+        text-align: left!important;
+    }
 }
-
 
 // Buttons
 
@@ -314,6 +338,45 @@ h4 {
     }
 }
 
+
+.eosc-btn {
+    background-size: 200% auto;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: unset;
+    line-height: 1.6;
+    margin: 5px;
+    padding: 7px 30px;
+    transition: 0.5s;
+    @at-root &__action {
+        background-image: linear-gradient(to right, $bright-turquoise 0%, $bright-blue 100%);
+        color: $white;
+        &:focus, &:active {
+            color: $white;
+            background-image: linear-gradient(to right, $bright-turquoise 0%, $bright-blue 100%);
+        }
+        &:hover {
+            color: $white;
+            background: $bright-blue;
+        }
+    }
+    @at-root &__secondary {
+        background-color: $white;
+        color: $bright-blue;
+        &:focus, &:active {
+            background-color: $white;
+            color: $bright-blue;
+        }
+        &:focus, &:active, &:hover {
+            background-color: $light-turquoise;
+            color: $bright-blue;
+        }
+    }
+}
+
 .ssp-btn__show-more {
     color: $text-color;
     &:hover {
@@ -324,6 +387,7 @@ h4 {
 .ssp-btns-container {
     text-align: center;
     padding-top: 32px;
+    margin-bottom: 20px;
     @at-root &--btn__right.ssp-btn {
         margin-left:  $btn-distance;
     }
@@ -332,9 +396,15 @@ h4 {
     }
 }
 
+@media screen and (max-width: 768px ) {
+    .ssp-btns-container--btn__left.ssp-btn {
+        margin-right: 5px;
+    }
+}
+
 
 .ssp-dropdown__two_cols {
-    width: 400px;
+    // width: 400px;
     padding: 6px;
     @at-root &--item {
         width: 50%;
@@ -349,6 +419,10 @@ h4 {
 
 .ssp-content-group {
     padding: 0px 42px;
+    &--bottom {
+        padding-top: 25px;
+    }
+
     &__provider-list {
         overflow: auto;
         &--idps_in_searchable_list {
@@ -386,7 +460,7 @@ h4 {
         overflow: hidden;
         float: left;
         word-break: break-word;
-        text-align: right;
+        text-align: left;
         padding-right: 20px;
         font-weight: bold;
     }
@@ -496,4 +570,14 @@ body .ssp-modal-body {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     z-index: 1000;
+}
+
+.header-teko {
+    font-family: 'Teko', sans-serif;
+    color: #444;
+    text-transform: uppercase!important;
+}
+
+h2.header-teko {
+    font-size: 26px;
 }

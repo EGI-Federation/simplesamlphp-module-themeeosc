@@ -1,17 +1,17 @@
 {
   "browser_tab_title": {
-    "en": "SimpleSAMLphp"
+    "en": "EOSC Portal"
   },
   "header_title": {
-    "en": "Identity Access Management for Research Communities"
+    "en": "" 
   },
   "header_subtitle": {
-    "en": "Use the same credentials for all our services"
+    "en": ""
   },
   "logo_link_url": {
-    "en": "https://www.example.com"
+    "en": ""
   },
   "ribbon_text": {
-    "en": "Demo"
+    "en": ""
   }
 }

@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Ubuntu|Teko:700');
+
 // Header
 $header-font-weight: 300;
+$header-font-family: 'Ubuntu';
 $header-margin-top: 10px;
 $header-margin-bottom: 10px;
 
@@ -15,7 +18,13 @@ $btn-img-copy-height: 20px;
 // Footer variables
 $footer-font-size: 12px;
 $footer-font-weight: 300;
-$footer-logo-height: 40px;
+$footer-logo-height: 60px;
 
 // Bootstrap variables
 $container-lg: 970px;
+
+// EOSC styleguides
+$font-family-sans-serif:  "Ubuntu";
+$body-bg: $wild-sand;
+$headings-color: $almost-black;
+
