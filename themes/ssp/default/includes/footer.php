@@ -37,92 +37,14 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
             <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML_Module::getModuleURL('themeeosc/resources/images/logo_w.png'); ?>" alt="EOSC" />
         </div>
         <div class="col-sm-8 ssp-content-group--bottom">
-                <div class="col-sm-9 text-right" id="copyright">
-                    <?php echo $this->t('{themeeosc:discopower:copyright_text}'); ?>
-                </div>
-                <div class="col-sm-3 text-right" id="privacy">
-                    <a href="<?php echo $this->t('{themeeosc:discopower:privacy_link_url}'); ?>" title="">
-                        <?php echo $this->t('{themeeosc:discopower:privacy_link_text}'); ?>
-                    </a>
-                </div>
-
-
-    <?php
-
-    $includeLanguageBar = TRUE;
-    if (!empty($_POST))
-      $includeLanguageBar = FALSE;
-    if (isset($this->data['hideLanguageBar']) && $this->data['hideLanguageBar'] === TRUE)
-      $includeLanguageBar = FALSE;
-
-    if ($includeLanguageBar) {
-
-      $languages = $this->getLanguageList();
-      if ( count($languages) > 1 ) {
-        echo '<div class="col-sm-2 ssp-footer__item" style="display:none;">
-          <div class="dropup ssp-footer__item__lang">';
-        $langnames = array(
-          'no' => 'Bokmål', // Norwegian Bokmål
-          'nn' => 'Nynorsk', // Norwegian Nynorsk
-          'se' => 'Sámegiella', // Northern Sami
-          'sam' => 'Åarjelh-saemien giele', // Southern Sami
-          'da' => 'Dansk', // Danish
-          'en' => 'English',
-          'de' => 'Deutsch', // German
-          'sv' => 'Svenska', // Swedish
-          'fi' => 'Suomeksi', // Finnish
-          'es' => 'Español', // Spanish
-          'fr' => 'Français', // French
-          'it' => 'Italiano', // Italian
-          'nl' => 'Nederlands', // Dutch
-          'lb' => 'Lëtzebuergesch', // Luxembourgish
-          'cs' => 'Čeština', // Czech
-          'sl' => 'Slovenščina', // Slovensk
-          'lt' => 'Lietuvių kalba', // Lithuanian
-          'hr' => 'Hrvatski', // Croatian
-          'hu' => 'Magyar', // Hungarian
-          'pl' => 'Język polski', // Polish
-          'pt' => 'Português', // Portuguese
-          'pt-br' => 'Português brasileiro', // Portuguese
-          'ru' => 'русский язык', // Russian
-          'et' => 'eesti keel', // Estonian
-          'tr' => 'Türkçe', // Turkish
-          'el' => 'ελληνικά', // Greek
-          'ja' => '日本語', // Japanese
-          'zh' => '简体中文', // Chinese (simplified)
-          'zh-tw' => '繁體中文', // Chinese (traditional)
-          'ar' => 'العربية', // Arabic
-          'fa' => 'پارسی', // Persian
-          'ur' => 'اردو', // Urdu
-          'he' => 'עִבְרִית', // Hebrew
-          'id' => 'Bahasa Indonesia', // Indonesian
-          'sr' => 'Srpski', // Serbian
-          'lv' => 'Latviešu', // Latvian
-          'ro' => 'Românește', // Romanian
-          'eu' => 'Euskara', // Basque
-        );
-
-        $textarray = array();
-        foreach ($languages AS $lang => $current) {
-          $lang = strtolower($lang);
-          if ($current) {
-            $lang_current = $langnames[$lang];
-          } else {
-            $textarray[] = '<li class="ssp-dropdown__two_cols--item"><a href="' . htmlspecialchars(\SimpleSAML\Utils\HTTP::addURLParameters(\SimpleSAML\Utils\HTTP::getSelfURL(), array($this->languageParameterName => $lang))) . '">' .
-              $langnames[$lang] . '</a></li>';
-          }
-        }
-        echo '<button class="ssp-btn btn ssp-btn__footer dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">'
-          . $lang_current
-          . '<span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-right ssp-dropdown__two_cols" aria-labelledby="dropdownMenu1">';
-        echo join(' ', $textarray);
-        echo '</ul></div></div>'; // /dropup /col-sm-4
-      }
-    }
-
-    ?>
+            <div class="col-sm-9 text-right" id="copyright">
+                <?php echo $this->t('{themeeosc:discopower:copyright_text}'); ?>
+            </div>
+            <div class="col-sm-3 text-right" id="privacy">
+                <a href="<?php echo $this->t('{themeeosc:discopower:privacy_link_url}'); ?>" title="">
+                    <?php echo $this->t('{themeeosc:discopower:privacy_link_text}'); ?>
+                </a>
+            </div>
         </div>
       </div>
     </div> <!-- /container-fluid -->
