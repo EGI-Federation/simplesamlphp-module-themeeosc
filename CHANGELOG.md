@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Module discopower: Add style rules and logos for the IdPs:
   - QQ
   - WeChat
+  - Epos
 
 
 
