@@ -12,6 +12,7 @@ Module discopower: Add style rules and logos for the IdPs:
   - QQ
   - WeChat
   - Epos
+  - Bitbucket
 
 
 
