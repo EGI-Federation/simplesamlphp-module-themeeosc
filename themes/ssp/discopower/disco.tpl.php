@@ -115,7 +115,7 @@ function getTranslatedName($t, $metadata) {
     $displayName = $metadata['UIInfo']['DisplayName'];
     assert('is_array($displayName)'); // Should always be an array of language code -> translation
     if (!empty($displayName)) {
-      return $t->getTranslation($displayName);
+      return $t->getTranslator()->getPreferredTranslation($displayName);
     }
   }
 
