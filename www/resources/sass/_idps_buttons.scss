@@ -26,8 +26,33 @@
         padding-bottom: 5px;
     }
     &.google {
+        background-color: white;
+        border-color: $google;
+        color: $google-font;
+        font: 500 14px 'Roboto', sans-serif;
+    }
+    &.google-dark {
+		padding-bottom: 10px;
         background-color: $google;
-        border: 1px solid $google;
+        border-color: $google;
+        color: white;
+        font: 500 14px 'Roboto', sans-serif;
+        letter-spacing: normal;
+		span {
+			display: inline-block;
+			line-height: 20px;
+			position: relative;
+			top: 2px;
+		}
+        img {
+            background: white;
+            height: 34px;
+            padding: 8px;
+            margin-right: 24px;
+            position: absolute;
+            left: 1px;
+            top: 1px;
+        }
     }
     &.orcid {
         color: darken($orcid, 10%);
@@ -102,4 +127,53 @@
             margin: 10px 0;
         }
     }
+    &.wechat {
+        background-color: $white;
+        border: $wechat 1px solid;
+        color: $wechat;
+        font-weight: bold;
+        &:hover {
+            color: darken($wechat, 10%);
+        }
+    }
+    &.qq {
+        background-color: $qq;
+    }
+    &.epos {
+        border-color: $epos;
+        background-color: $white;
+        img {
+            padding: 5px;
+            margin-right: 0;
+        }
+    }
+    &.bitbucket {
+        border-color: $bitbucket;
+        background-color: $white;
+        span {
+            display: none;
+        }
+        img {
+            padding: 5px;
+            margin-right: 0;
+        }
+    }
+
+    &.github {
+        border-color: $github;
+        background: $white url("../images/github.png") no-repeat center center;
+        background-size: 55%;
+        span {
+            display: none;
+        }
+        img {
+            visibility: hidden;
+        }
+        &:hover {
+            background: $white url("../images/github-mark.png") no-repeat center center;
+            background-size: 26px;
+        }
+    }
+
+
 }

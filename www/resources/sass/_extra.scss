@@ -312,7 +312,8 @@ h4 {
         }
         img {
             height: $btn-img-with-label-height;
-            margin-right: 12px
+            margin-right: 12px;
+            display: inline-block;
         }
     }
     &__icon-no-label {
@@ -334,6 +335,7 @@ h4 {
         img {
             height: $btn-img-no-label-height;
             margin: 0px;
+            display: inline-block;
         }
     }
 }
