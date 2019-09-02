@@ -6,8 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## Added
 
+## Added
 Module discopower: Add style rules and logos for the IdPs:
   - QQ
   - WeChat
@@ -15,6 +15,11 @@ Module discopower: Add style rules and logos for the IdPs:
   - Bitbucket
   - Github
 
+##  Changed
+- Alter Google login button style due to Google+ deprecation.
+
+##  Fixed
+- Fix bug with language selection.
 
 
 ## [v-eosc-1.0.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeeosc/releases/tag/v-eosc-1.0.0) - 2018-12-05
