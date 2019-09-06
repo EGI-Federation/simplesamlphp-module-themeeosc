@@ -123,7 +123,7 @@ function getTranslatedName($t, $metadata) {
 
   if (array_key_exists('name', $metadata)) {
     if (is_array($metadata['name'])) {
-      return $t->getTranslation($metadata['name']);
+      return $t->getTranslator()->getPreferredTranslation($metadata['name']);
     } else {
       return $metadata['name'];
     }
