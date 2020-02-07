@@ -23,7 +23,9 @@ foreach( $this->data['idplist'] AS $tab => $slist) {
     $faventry = $slist[$this->data['preferredidp']];
 }
 
-$this->data['header'] = $this->t('selectidp');
+if(!array_key_exists('header', $this->data)) {
+  $this->data['header'] = 'selectidp';
+}
 $this->data['header'] = $this->t($this->data['header']);
 $this->data['jquery'] = ['core' => true, 'ui' => true, 'css' => true];
 
