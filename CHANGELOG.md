@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Update translation functionality.
+- Update code to match simplesamlphp>1.14.
+- Update copyright year.
 
 ### Fixed
 - Fix js files path.
