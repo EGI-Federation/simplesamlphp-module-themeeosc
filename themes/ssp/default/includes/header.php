@@ -24,7 +24,7 @@ if (array_key_exists('pageid', $this->data)) {
     'page' => $this->data['pageid']
   );
 
-  SimpleSAML_Module::callHooks('htmlinject', $hookinfo);
+  SimpleSAML\Module::callHooks('htmlinject', $hookinfo);
 }
 // - o - o - o - o - o - o - o - o - o - o - o - o -
 
@@ -56,8 +56,8 @@ header('X-Frame-Options: SAMEORIGIN');
   <?php if(array_key_exists('header', $this->data)) { echo (' | ' . $this->data['header']); } ?>
 </title>
 
-<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/css/app.css')); ?>" />
-<link rel="shortcut icon" type="image/x-icon" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/images/favicon.ico')); ?>"  />
+<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeeosc/resources/css/app.css')); ?>" />
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeeosc/resources/images/favicon.ico')); ?>"  />
 
 <?php
 
@@ -138,7 +138,7 @@ if($onLoad !== '') {
             <div class="col-sm-6 ssp-logo">
                 <a <?php echo (strpos($this->t('{themeeosc:default:logo_link_url}'), 'not translated') === FALSE ? 'href="' .  $this->t('{themeeosc:default:logo_link_url}') . '"' : '');
                          echo (strpos($this->t('{themeeosc:default:header_title}'), 'not translated') === FALSE ? 'title="' .  $this->t('{themeeosc:default:header_title}') . '"' : ''); ?> >
-                  <img src="<?php echo SimpleSAML_Module::getModuleURL('themeeosc/resources/images/logo.png'); ?>" alt="simplesamlphp" />
+                  <img src="<?php echo SimpleSAML\Module::getModuleURL('themeeosc/resources/images/logo.png'); ?>" alt="simplesamlphp" />
                 </a>
             </div>
             <div class="col-sm-6">
@@ -160,13 +160,13 @@ if($onLoad !== '') {
           'no' => 'Bokmål', // Norwegian Bokmål
           'nn' => 'Nynorsk', // Norwegian Nynorsk
           'se' => 'Sámegiella', // Northern Sami
-          'sam' => 'Åarjelh-saemien giele', // Southern Sami
           'da' => 'Dansk', // Danish
           'en' => 'English',
           'de' => 'Deutsch', // German
           'sv' => 'Svenska', // Swedish
           'fi' => 'Suomeksi', // Finnish
           'es' => 'Español', // Spanish
+          'ca' => 'Català', // Catalan
           'fr' => 'Français', // French
           'it' => 'Italiano', // Italian
           'nl' => 'Nederlands', // Dutch
@@ -187,14 +187,15 @@ if($onLoad !== '') {
           'zh' => '简体中文', // Chinese (simplified)
           'zh-tw' => '繁體中文', // Chinese (traditional)
           'ar' => 'العربية', // Arabic
-          'fa' => 'پارسی', // Persian
-          'ur' => 'اردو', // Urdu
           'he' => 'עִבְרִית', // Hebrew
           'id' => 'Bahasa Indonesia', // Indonesian
           'sr' => 'Srpski', // Serbian
           'lv' => 'Latviešu', // Latvian
           'ro' => 'Românește', // Romanian
           'eu' => 'Euskara', // Basque
+          'af' => 'Afrikaans', // Afrikaans
+          'zu' => 'IsiZulu', // Zulu
+          'xh' => 'isiXhosa', // Xhosa
         );
 
         $textarray = array();

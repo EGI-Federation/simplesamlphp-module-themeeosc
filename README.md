@@ -10,6 +10,15 @@ Screenshots are available in [screenshots](screenshots/).
 More information regarding the installation and the customisation of the theme can be found
 in the [repository of the vanilla theme](https://github.com/rciam/simplesamlphp-module-themevanilla).
 
+## Compatibility matrix
+
+This table matches the theme version with the supported SimpleSAMLphp version.
+
+| Theme |  SimpleSAMLphp  |
+|:------:|:--------------:|
+| v-eosc-1.1.0 | v1.15     |
+| v-eosc-2.0.0 | v1.17     |
+
 ## License
 
 Licensed under the Apache 2.0 license, for details see `LICENSE`.
