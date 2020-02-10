@@ -1,5 +1,5 @@
 <?php
-$themeConfig = SimpleSAML_Configuration::getConfig('module_themeeosc.php');
+$themeConfig = SimpleSAML\Configuration::getConfig('module_themeeosc.php');
 $enable_cookies_banner = $themeConfig->getValue('enable_cookies_banner');
 
 if(!empty($this->data['htmlinject']['htmlContentPost'])) {
@@ -34,7 +34,7 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
     <div class="container ssp-footer--container">
       <div class="row ssp-content-group--footer">
         <div class="col-sm-4">
-            <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML_Module::getModuleURL('themeeosc/resources/images/logo_w.png'); ?>" alt="EOSC" />
+            <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML\Module::getModuleURL('themeeosc/resources/images/logo_w.png'); ?>" alt="EOSC" />
         </div>
         <div class="col-sm-8 ssp-content-group--bottom">
             <div class="col-sm-9 text-right" id="copyright">
@@ -57,19 +57,19 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
     </div>
   </footer>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/js/cookie.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeeosc/resources/js/cookie.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/js/dropdown.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeeosc/resources/js/dropdown.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/js/modal.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeeosc/resources/js/modal.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/js/tooltip.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeeosc/resources/js/tooltip.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeeosc/resources/js/theme.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeeosc/resources/js/theme.js')); ?>">
   </script>
 
 </body>

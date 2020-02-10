@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- Add languages (Xhosa, Zulu, Afrikaans).
+
+### Changed
+- Update translation functionality.
+- Update code to match simplesamlphp>1.14.
+- Update copyright year.
+
+### Fixed
+- Fix js files path.
+
+
 ## [v-eosc-1.1.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeeosc/compare/v-eosc-1.1.0...v-eosc-1.1.1) - 2019-09-13
 
 ###  Fixed
