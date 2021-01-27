@@ -37,5 +37,11 @@
   },
   "privacy_link_url": {
     "en": "https://aai.eosc-portal.eu/privacy/en/"
+  },
+  "contact_us_text": {
+    "en": "Contact Us"
+  },
+  "contact_us_url": {
+    "en": "https://eosc-portal.eu/contact-us"
   }
 }
