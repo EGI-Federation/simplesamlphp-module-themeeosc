@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Add `login_with` key in discopower definitions
+
+### Fixed
+
+- Load JavaScript scripts with the new way
+
+### Changed
+
+- Move `ribbon_text` definition to config file
+
 ## [v-eosc-2.0.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeeosc/compare/v-eosc-1.1.1...v-eosc-2.0.0) - 2020-02-10
 
 ### Added
