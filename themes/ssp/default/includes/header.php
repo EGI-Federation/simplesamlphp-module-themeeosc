@@ -1,6 +1,7 @@
 <?php
 
-
+$themeConfig = SimpleSAML\Configuration::getConfig('module_themeeosc.php');
+$ribbonText = $themeConfig->getValue('ribbon_text');
 
 /**
  * Support the htmlinject hook, which allows modules to change header, pre and post body on all pages.
@@ -127,9 +128,9 @@ if($onLoad !== '') {
 
 <div class="header">
 <?php
-  if (strpos($this->t('{themeeosc:default:ribbon_text}'), 'not translated') === FALSE || $this->t('{themeeosc:default:ribbon_text}')) {
+  if (!empty($ribbonText)) {
     echo '<div class="corner-ribbon red">';
-    echo $this->t('{themeeosc:default:ribbon_text}');
+    echo $ribbonText;
     echo '</div>';
   }
   ?>
