@@ -43,5 +43,8 @@
   },
   "contact_us_url": {
     "en": "https://eosc-portal.eu/contact-us"
+  },
+  "login_with": {
+    "en": "Log in with"
   }
 }
