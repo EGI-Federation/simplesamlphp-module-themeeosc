@@ -38,10 +38,10 @@
   "privacy_link_url": {
     "en": "https://aai.eosc-portal.eu/privacy/en/"
   },
-  "contact_us_link_text": {
-    "en": "Contact Us"
+  "contact_link_text": {
+    "en": "Support"
   },
-  "contact_us_link_url": {
-    "en": "https://eosc-portal.eu/contact-us"
+  "contact_link_url": {
+    "en": "https://eosc-portal.eu/helpdesk"
   }
 }
