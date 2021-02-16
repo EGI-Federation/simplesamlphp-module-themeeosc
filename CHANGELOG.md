@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add `login_with` key in discopower definitions
+- Add dictionary for `authorize_403.php` template
 
 ### Fixed
 
@@ -17,6 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Move `ribbon_text` definition to config file
+- Update copyright text
+- Edit `resolution_MISSINGATTRIBUTE_orcid` text
 
 ## [v-eosc-2.0.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeeosc/compare/v-eosc-1.1.1...v-eosc-2.0.0) - 2020-02-10
 
