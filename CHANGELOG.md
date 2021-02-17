@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add `login_with` key in discopower definitions
 - Add dictionary for `authorize_403.php` template
+- Add Support link in footer
 
 ### Fixed
 
