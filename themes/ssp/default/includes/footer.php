@@ -41,8 +41,8 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
                 <?php echo $this->t('{themeeosc:discopower:copyright_text}'); ?>
             </div>
             <div class="col-sm-6 text-right" id="privacy">
-                <a href="<?php echo $this->t('{themeeosc:discopower:contact_us_url}'); ?>" title="">
-                    <?php echo $this->t('{themeeosc:discopower:contact_us_text}'); ?>
+                <a href="<?php echo $this->t('{themeeosc:discopower:contact_link_url}'); ?>" title="">
+                    <?php echo $this->t('{themeeosc:discopower:contact_link_text}'); ?>
                 </a>
                 &nbsp;|&nbsp;
                 <a href="<?php echo $this->t('{themeeosc:discopower:privacy_link_url}'); ?>" title="">
