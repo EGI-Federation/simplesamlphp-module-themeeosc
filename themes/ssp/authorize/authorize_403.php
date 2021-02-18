@@ -20,7 +20,7 @@ $this->includeAtTemplateBase('includes/header.php');
 <?php
 if (isset($this->data['LogoutURL'])) {
 ?>
-<p><a href="<?php echo htmlspecialchars($this->data['LogoutURL']); ?>"><?php echo $this->t('{status:logout}'); ?></a></p>
+<p><a href="<?php echo htmlspecialchars($this->data['LogoutURL']); ?>"><?php echo $this->t('{themeeosc:authorize:logout}'); ?></a></p>
 <?php
 }
 ?>

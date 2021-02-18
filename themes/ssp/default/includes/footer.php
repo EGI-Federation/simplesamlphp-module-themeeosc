@@ -37,10 +37,14 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
             <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML\Module::getModuleURL('themeeosc/resources/images/logo_w.png'); ?>" alt="EOSC" />
         </div>
         <div class="col-sm-8 ssp-content-group--bottom">
-            <div class="col-sm-9 text-right" id="copyright">
+            <div class="col-sm-6 text-right" id="copyright">
                 <?php echo $this->t('{themeeosc:discopower:copyright_text}'); ?>
             </div>
-            <div class="col-sm-3 text-right" id="privacy">
+            <div class="col-sm-6 text-right" id="privacy">
+                <a href="<?php echo $this->t('{themeeosc:discopower:contact_link_url}'); ?>" title="">
+                    <?php echo $this->t('{themeeosc:discopower:contact_link_text}'); ?>
+                </a>
+                &nbsp;|&nbsp;
                 <a href="<?php echo $this->t('{themeeosc:discopower:privacy_link_url}'); ?>" title="">
                     <?php echo $this->t('{themeeosc:discopower:privacy_link_text}'); ?>
                 </a>
