@@ -28,6 +28,11 @@ if(!array_key_exists('header', $this->data)) {
 }
 $this->data['header'] = $this->t($this->data['header']);
 
+$this->data['jquery'] = ['core' => true, 'ui' => false, 'css' => false];
+
+$this->data['head'] = '<link rel="stylesheet" media="screen" type="text/css" href="'.
+    SimpleSAML\Module::getModuleURL('discopower/assets/css/uitheme1.12.1/jquery-ui.min.css').'" />';
+
 if (!empty($faventry)) $this->data['autofocus'] = 'favouritesubmit';
 
 $this->includeAtTemplateBase('includes/header.php');
