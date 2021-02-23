@@ -41,8 +41,6 @@ $this->data['htmlinject']['htmlContentPost'][] = '<script type="text/javascript"
 $this->data['htmlinject']['htmlContentPost'][] = '<script type="text/javascript" src="'.
     SimpleSAML\Module::getModuleURL('discopower/assets/js/tablist.js').'"></script>'."\n";
 $this->data['htmlinject']['htmlContentPost'][] = '<script type="text/javascript" src="'.
-    SimpleSAML\Module::getModuleURL('discopower/assets/js/jquery.livesearch.js').'"></script>'."\n";
-$this->data['htmlinject']['htmlContentPost'][] = '<script type="text/javascript" src="'.
     SimpleSAML\Module::getModuleURL('discopower/assets/js/'.$this->data['score'].'.js') . '"></script>'."\n";
 
 
