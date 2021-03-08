@@ -9,12 +9,18 @@ EOF;
 
 $this->includeAtTemplateBase('includes/header.php');
 $retryUrl = $this->data['parameters']['%BASEDIR%'] . 'saml2/idp/initSLO.php?RelayState=' . urlencode($this->data['parameters']['%RESTARTURL%']);
+$translationParams = [
+  '%IDPNAME%' => $this->data['parameters']['%IDPNAME%'],
+  '%IDPNAMEURLENCODED%' => urlencode($this->data['parameters']['%IDPNAME%']),
+  '%IDPEMAILADDRESS%' => $this->data['parameters']['%IDPEMAILADDRESS%'],
+  '%RETRY_URL%' => $retryUrl,
+];
 ?>
 <div class="row">
   <div class="col-sm-12">
   <h2><?php echo $this->t('{themeeosc:userid_error:title}'); ?></h2>
-    <p><?php echo $this->t('{themeeosc:userid_error:descr_'.$this->data['errorCode'].'}', $this->data['parameters']); ?></p>
-    <p><?php echo (!empty($this->data['parameters']['%CUSTOMRESOLUTION%'])) ? $this->t('{themeeosc:userid_error:'.$this->data['parameters']['%CUSTOMRESOLUTION%'].'}', array_merge($this->data['parameters'], array('%RETRY_URL%' => $retryUrl))) : $this->t('{themeeosc:userid_error:resolution_'.$this->data['errorCode'].'}', array_merge($this->data['parameters'], array('%IDPNAMEURLENCODED%' => urlencode($this->data['parameters']['%IDPNAME%']), '%RETRY_URL%' => $retryUrl))); ?></p>
+    <p><?php echo $this->t('{themeeosc:userid_error:descr_'.$this->data['errorCode'].'}', $translationParams); ?></p>
+    <p><?php echo (!empty($this->data['parameters']['%CUSTOMRESOLUTION%'])) ? $this->t('{themeeosc:userid_error:'.$this->data['parameters']['%CUSTOMRESOLUTION%'].'}', $translationParams) : $this->t('{themeeosc:userid_error:resolution_'.$this->data['errorCode'].'}', $translationParams); ?></p>
   </div>
 </div>
 <div class="row">
